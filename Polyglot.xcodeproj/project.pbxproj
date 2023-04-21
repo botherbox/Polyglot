@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		994124CB22D20FD6007830D4 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 994124CA22D20FD6007830D4 /* icon.icns */; };
+		752FAF3F29F22B58002E0F03 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 752FAF3E29F22B58002E0F03 /* icon.icns */; };
 		994C4A4122C3205F00BACF66 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 994C4A3F22C3205F00BACF66 /* icon.png */; };
 		994C4A4322C3212600BACF66 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994C4A4222C3212600BACF66 /* Translator.swift */; };
 		99CC9B1222CB3115002650EF /* PolyglotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CC9B1122CB3115002650EF /* PolyglotTests.swift */; };
@@ -61,8 +61,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		994124CA22D20FD6007830D4 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
-		994C4A3F22C3205F00BACF66 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon.png"; sourceTree = "<group>"; };
+		752FAF3E29F22B58002E0F03 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../../../../Downloads/icon.icns; sourceTree = "<group>"; };
+		994C4A3F22C3205F00BACF66 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		994C4A4222C3212600BACF66 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		99CC9B0F22CB3115002650EF /* PolyglotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolyglotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CC9B1122CB3115002650EF /* PolyglotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyglotTests.swift; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 				99ED82842118127D00505D83 /* Info.plist */,
 				99ED82852118127D00505D83 /* Polyglot.entitlements */,
 				99ED827F2118127D00505D83 /* Assets.xcassets */,
-				994124CA22D20FD6007830D4 /* icon.icns */,
+				752FAF3E29F22B58002E0F03 /* icon.icns */,
 			);
 			path = Polyglot;
 			sourceTree = "<group>";
@@ -364,7 +364,7 @@
 			files = (
 				99ED82802118127D00505D83 /* Assets.xcassets in Resources */,
 				99ED82832118127D00505D83 /* MainMenu.xib in Resources */,
-				994124CB22D20FD6007830D4 /* icon.icns in Resources */,
+				752FAF3F29F22B58002E0F03 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +543,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -598,7 +598,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -613,9 +613,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Polyglot/Polyglot.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 58XDWHK3JX;
+				DEVELOPMENT_TEAM = RF43UHJ34Q;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Polyglot/Info.plist;
@@ -623,7 +624,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.uechi.Polyglot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.botherbox.Polyglot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -636,9 +637,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Polyglot/Polyglot.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 58XDWHK3JX;
+				DEVELOPMENT_TEAM = RF43UHJ34Q;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Polyglot/Info.plist;
@@ -646,7 +648,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.uechi.Polyglot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.botherbox.Polyglot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -657,8 +659,9 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PolyglotSafariExtension/PolyglotSafariExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58XDWHK3JX;
+				DEVELOPMENT_TEAM = RF43UHJ34Q;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PolyglotSafariExtension/Info.plist;
@@ -667,7 +670,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.uechi.Polyglot.PolyglotSafariExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.botherbox.Polyglot.PolyglotSafariExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -679,8 +682,9 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PolyglotSafariExtension/PolyglotSafariExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58XDWHK3JX;
+				DEVELOPMENT_TEAM = RF43UHJ34Q;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = PolyglotSafariExtension/Info.plist;
@@ -689,7 +693,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.uechi.Polyglot.PolyglotSafariExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.botherbox.Polyglot.PolyglotSafariExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

@@ -14,7 +14,7 @@ struct SettingsKey {
 
 let DEFAULT_SOURCE = ("auto", "Auto Detect")
 let DEFAULT_TARGET = ("en", "English")
-let GROUP_ID = "58XDWHK3JX.io.uechi.Polyglot"
+let GROUP_ID = "RF43UHJ34Q.com.botherbox.Polyglot"
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {

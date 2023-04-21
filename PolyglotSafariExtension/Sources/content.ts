@@ -161,6 +161,7 @@ function handleMouseUp(e: MouseEvent): void {
   )
     return;
 
+    console.log('handleMouseUp1' + selectedText);
   if (settings.confirmInstantTranslation) {
     return showConfirmButton((e) => {
       performTranslation(selectedText);

@@ -101,7 +101,10 @@ export function showTranslation(args: TranslationParams) {
   showPanel(result);
 }
 
+
+let _version = '4';
 export function removePanel() {
+  console.log('REMOVE_PANEL' + _version);
   isPanelOpen = false;
   const panel = document.getElementById(PANEL_ID);
   if (panel) {
@@ -121,7 +124,7 @@ export function showPanel(
   } = {}
 ): void {
   if (isPanelOpen) removePanel();
-
+  console.log('SHOW_PANEL' + _version);
   const bounds = getSelectionBoundingRect();
   if (bounds === undefined) return;
 
@@ -137,6 +140,8 @@ export function showPanel(
     el.style[key] = style[key]!;
   }
 
-  document.body.insertBefore(el, document.body.firstChild);
+  // document.body.insertBefore(el, document.body.firstChild);
+  // document.body.insertBefore(el, null);
+  document.body.appendChild(el);
   isPanelOpen = true;
 }

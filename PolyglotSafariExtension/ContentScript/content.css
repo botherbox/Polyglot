@@ -36,7 +36,7 @@
 
   position: absolute !important;
   margin-right: 20px !important;
-  transform: scale(0) !important;
+  /* transform: scale(0) !important; */
   transform-origin: 0 0 !important;
   z-index: 99999 !important;
 
@@ -46,8 +46,8 @@
   font-family: var(--font-family) !important;
   color: var(--text) !important;
 
-  animation: polyglot__envelope 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-    forwards !important;
+  /* animation: polyglot__envelope 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards !important; */
 }
 
 .polyglot__inner {

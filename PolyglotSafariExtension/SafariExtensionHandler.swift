@@ -23,7 +23,7 @@ enum SettingsKey {
   static let ConfirmInstantTranslation = "confirmInstantTranslation"
 }
 
-let GROUP_ID = "58XDWHK3JX.io.uechi.Polyglot"
+let GROUP_ID = "RF43UHJ34Q.com.botherbox.Polyglot"
 
 class SafariExtensionHandler: SFSafariExtensionHandler {
   var ud = UserDefaults(suiteName: GROUP_ID)!
